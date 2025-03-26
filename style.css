@@ -1,0 +1,298 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: pink;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    max-height: 100vh; /* Set maximum height for the container */
+    overflow-y: auto; /* Enable vertical scrolling for memories page */
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+/* 🎁 Gift Box */
+.gift-box {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: red;
+    margin: 50px auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.lid {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    background: darkred;
+    top: -30px;
+    left: -5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.ribbon {
+    position: absolute;
+    width: 20px;
+    height: 120px;
+    background: gold;
+    left: 50px;
+    top: 0;
+    border-radius: 5px;
+}
+
+/* 🎂 Cake */
+.cake-container {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 1s ease-in-out;
+}
+
+.cake {
+    position: relative;
+    width: 150px;
+    height: 160px;
+    margin: auto;
+}
+
+/* Cake Layers */
+.layer {
+    width: 150px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.top-layer {
+    height: 40px;
+    background: pink;
+    border-radius: 50% 50% 0 0;
+}
+
+.middle-layer {
+    height: 50px;
+    background: chocolate;
+}
+
+.bottom-layer {
+    height: 60px;
+    background: brown;
+}
+
+/* Icing */
+.icing {
+    position: absolute;
+    top: 35px;
+    width: 150px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* Candles */
+.candles {
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+.candle {
+    width: 10px;
+    height: 30px;
+    background: red;
+    position: relative;
+    border-radius: 5px;
+}
+
+.flame {
+    width: 6px;
+    height: 10px;
+    background: yellow;
+    position: absolute;
+    top: -10px;
+    left: 2px;
+    border-radius: 50%;
+    animation: flicker 0.5s infinite alternate;
+}
+
+/* Knife */
+.knife {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    background: silver;
+    border-radius: 5px;
+    transition: transform 1s ease-in-out;
+}
+
+/* Cake Slice */
+.cake-slice {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background: chocolate;
+    top: 50px;
+    left: 50px;
+    border-radius: 5px;
+    transition: transform 1s ease-in-out;
+}
+
+/* Confetti */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: gold;
+    top: -10px;
+    animation: fall 3s linear infinite;
+}
+
+/* Animations */
+@keyframes flicker {
+    from { opacity: 1; }
+    to { opacity: 0.6; }
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.hidden {
+    display: none;
+    }
+#ageMessage{border: 1px solid black;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size:x-large;
+    background-color: deeppink;
+    border-radius: 50px;
+    font-style:italic ;}
+#cutCakeBtn{
+    border-radius: 15px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 3rem;
+    animation: fadeIn 2s ease-in-out;
+    font-style: italic;
+}
+
+.balloon {
+    position: absolute;
+    width: 60px;
+    height: 80px;
+    border-radius: 50%;
+    background: red;
+    animation: floatUp 6s infinite ease-in-out;
+}
+
+.memory img {
+    width: 200px; /* Increase size for images */
+
+    height: auto;
+    margin-bottom: 5px; /* Reduce space between image and caption */
+    animation: flyIn 0.5s forwards; /* Apply fly-in animation */
+    opacity: 0; /* Start invisible */
+}
+
+@keyframes flyIn {
+    0% {
+        transform: translateY(-100px); /* Start from above */
+        opacity: 0; /* Start invisible */
+    }
+    100% {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* End visible */
+    }
+}
+
+.flower {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('https://example.com/path/to/flower-icon.png') no-repeat center center; /* Replace with actual URL */
+    background-size: contain;
+    animation: fall 5s infinite;
+}
+
+@keyframes floatUp {
+    0% { transform: translateY(100vh); }
+    100% { transform: translateY(-100vh); }
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100px); }
+    100% { transform: translateY(100vh); }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.btn {
+    padding: 15px 30px;
+    position: relative; /* Ensure positioning for flower animation */
+    z-index: 10; /* Ensure buttons are on top of other elements */
+    background: #ff5e78;
+    border: none;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background: #ff3b5a;
+}
+
+#mem1 {
+    transform: rotate(90deg);
+}
+
+#mem3 {
+    height: 370px;}
+.dancing-teddy{
+    border-radius: 50px;
+}
+p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-style:italic;
+
+}
+.memory p{
+    color: red;
+    font-style:italic ;
+    font-size: large;
+    font-weight: bold;
+}
+.xyz{
+    margin-top: 50px;
+}

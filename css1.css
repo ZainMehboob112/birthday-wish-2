@@ -1,0 +1,180 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(120deg, #ff9a9e, #fad0c4);
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 50px;
+}
+.gift-box {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    background: red;
+    margin: 50px auto;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.lid {
+    position: absolute;
+    width: 130px;
+    height: 30px;
+    background: darkred;
+    top: -30px;
+    left: -5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.ribbon {
+    position: absolute;
+    width: 20px;
+    height: 120px;
+    background: gold;
+    left: 50px;
+    top: 0;
+    border-radius: 5px;
+}
+
+/* 🎂 Cake */
+.cake-container {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 1s ease-in-out;
+}
+
+.cake {
+    position: relative;
+    width: 150px;
+    height: 160px;
+    margin: auto;
+}
+
+/* Cake Layers */
+.layer {
+    width: 150px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.top-layer {
+    height: 40px;
+    background: pink;
+    border-radius: 50% 50% 0 0;
+}
+
+.middle-layer {
+    height: 50px;
+    background: chocolate;
+}
+
+.bottom-layer {
+    height: 60px;
+    background: brown;
+}
+
+/* Icing */
+.icing {
+    position: absolute;
+    top: 35px;
+    width: 150px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+}
+
+/* Candles */
+.candles {
+    position: absolute;
+    top: -30px;
+    left: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+.candle {
+    width: 10px;
+    height: 30px;
+    background: red;
+    position: relative;
+    border-radius: 5px;
+}
+
+.flame {
+    width: 6px;
+    height: 10px;
+    background: yellow;
+    position: absolute;
+    top: -10px;
+    left: 2px;
+    border-radius: 50%;
+    animation: flicker 0.5s infinite alternate;
+}
+
+/* Knife */
+.knife {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    background: silver;
+    border-radius: 5px;
+    transition: transform 1s ease-in-out;
+}
+
+/* Cake Slice */
+.cake-slice {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background: chocolate;
+    top: 50px;
+    left: 50px;
+    border-radius: 5px;
+    transition: transform 1s ease-in-out;
+}
+
+/* Confetti */
+.confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: gold;
+    top: -10px;
+    animation: fall 3s linear infinite;
+}
+
+/* Animations */
+@keyframes flicker {
+    from { opacity: 1; }
+    to { opacity: 0.6; }
+}
+
+@keyframes fall {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(100vh); opacity: 0; }
+}
+
+.hidden {
+    display: none;
+    }
+#ageMessage{border: 1px solid black;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-size:x-large;
+    background-color: deeppink;
+    border-radius: 50px;
+    font-style:italic ;}
+#cutCakeBtn{
+    border-radius: 15px;
+    font-size: 15px;
+    font-style: italic;
+}
